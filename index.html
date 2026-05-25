@@ -4,1153 +4,491 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Gogou Pets — Carefully Chosen Pet Essentials for UK Homes</title>
-  <meta name="description" content="Gogou Pets carefully selects pet essentials we genuinely use and trust. Curated for UK homes."/>
+  <meta name="description" content="Gogou Pets curates pet essentials we genuinely use. Featuring PAWTASTIC Tofu Cat Litter — £9.99 with free UK shipping on 3+ bags. Open to brand partnerships."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet"/>
-
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet"/>
   <style>
-/* ══════════════════════════════════════════
-   TOKENS  — bright, warm, playful
-══════════════════════════════════════════ */
+/* ═══════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════ */
 :root{
-  --cream:    #fdf8f2;
-  --warm:     #f5ede0;
-  --sand:     #e8d9c5;
-  --white:    #ffffff;
-
-  /* Vivid accent palette */
-  --peach:    #ff7c52;
-  --peach-dk: #d95c35;
-  --peach-lt: #fff0eb;
-  --honey:    #f5a623;
-  --honey-lt: #fff8e8;
-  --honey-dk: #c8831a;
-  --sage:     #5ec08a;
-  --sage-lt:  #edf9f2;
-  --sky:      #4fb4e8;
-  --sky-lt:   #e8f6fd;
-  --rose:     #f06292;
-  --rose-lt:  #fde8f1;
-
-  --ink:      #1e1814;
-  --ink-mid:  #5a4a3a;
-  --ink-soft: #9a8a7a;
-  --ink-faint:#c8b8a8;
-  --border:   #edddd0;
-
-  --f-head: 'Fraunces', Georgia, serif;
-  --f-body: 'Nunito', system-ui, sans-serif;
-
-  --r-sm:  8px;
-  --r-md:  16px;
-  --r-lg:  24px;
-  --r-xl:  36px;
-  --r-pill:999px;
-
-  --sh-xs: 0 1px 4px rgba(30,24,20,.06);
-  --sh-sm: 0 3px 14px rgba(30,24,20,.09);
-  --sh-md: 0 8px 32px rgba(30,24,20,.11);
-  --sh-lg: 0 20px 56px rgba(30,24,20,.13);
-
-  --ease: .32s cubic-bezier(.4,0,.2,1);
+  --cream:#fdf8f2; --warm:#f5ede0; --sand:#e8d9c5;
+  --white:#ffffff; --border:#edddd0;
+  --peach:#ff7c52; --peach-dk:#d95c35; --peach-lt:#fff0eb;
+  --honey:#f5a623; --honey-lt:#fff8e8; --honey-dk:#c8831a;
+  --sage-lt:#edf9f2;
+  --pt:#4a7c59; --pt-lt:#eef5f0; --pt-dk:#2d5a3d; --pt-mid:#c8dece;
+  --ink:#1e1814; --ink-mid:#5a4a3a; --ink-soft:#9a8a7a; --ink-faint:#c8b8a8;
+  --f-head:'Fraunces',Georgia,serif; --f-body:'Nunito',system-ui,sans-serif;
+  --r-sm:8px; --r-md:16px; --r-lg:24px; --r-xl:36px; --r-pill:999px;
+  --sh-xs:0 1px 4px rgba(30,24,20,.06); --sh-sm:0 3px 14px rgba(30,24,20,.09);
+  --sh-md:0 8px 32px rgba(30,24,20,.11); --sh-lg:0 20px 56px rgba(30,24,20,.14);
+  --sh-xl:0 32px 80px rgba(30,24,20,.16);
+  --ease:.32s cubic-bezier(.4,0,.2,1);
 }
-
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  font-family:var(--f-body);
-  background:var(--cream);
-  color:var(--ink);
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
+body{font-family:var(--f-body);background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
-
 .container{width:min(1100px,92vw);margin-inline:auto}
 section{padding:5.5rem 0}
 
-/* ══════════════════════════════════════════
-   TYPE
-══════════════════════════════════════════ */
-.eyebrow{
-  font-size:.68rem;font-weight:800;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:.75rem;
-}
-.h2{
-  font-family:var(--f-head);
-  font-size:clamp(2rem,3.8vw,3rem);
-  font-weight:600;line-height:1.12;color:var(--ink);
-}
+/* ── TYPE ── */
+.eyebrow{font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:.75rem}
+.h2{font-family:var(--f-head);font-size:clamp(2rem,3.8vw,3rem);font-weight:600;line-height:1.12;color:var(--ink)}
 .h2 em{font-style:italic;color:var(--peach)}
-.body{font-size:.95rem;line-height:1.8;color:var(--ink-mid);font-weight:400}
+.body{font-size:.95rem;line-height:1.8;color:var(--ink-mid)}
 
-/* ══════════════════════════════════════════
-   BUTTONS
-══════════════════════════════════════════ */
-.btn{
-  display:inline-flex;align-items:center;gap:.5rem;
-  font-family:var(--f-body);font-size:.88rem;font-weight:800;
-  padding:.72em 1.6em;border-radius:var(--r-pill);
-  border:2px solid transparent;cursor:pointer;
-  transition:all var(--ease);
-}
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f-body);font-size:.9rem;font-weight:800;padding:.75em 1.65em;border-radius:var(--r-pill);border:2px solid transparent;cursor:pointer;transition:all var(--ease);white-space:nowrap}
 .btn-peach{background:var(--peach);color:#fff;border-color:var(--peach)}
 .btn-peach:hover{background:var(--peach-dk);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,124,82,.35)}
-.btn-honey{background:var(--honey);color:#fff;border-color:var(--honey)}
-.btn-honey:hover{background:var(--honey-dk);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--ink);border-color:var(--border)}
+.btn-green{background:var(--pt);color:#fff;border-color:var(--pt)}
+.btn-green:hover{background:var(--pt-dk);transform:translateY(-2px);box-shadow:0 8px 24px rgba(74,124,89,.3)}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--sand)}
 .btn-outline:hover{border-color:var(--ink);transform:translateY(-2px)}
-
-.tlink{
-  font-size:.86rem;font-weight:700;color:var(--peach);
-  display:inline-flex;align-items:center;gap:.4rem;
-  transition:gap var(--ease);
-}
+.btn-ink{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn-ink:hover{background:#3a2e26;transform:translateY(-2px)}
+.btn-tiktok{background:#010101;color:#fff;border-color:#010101;display:inline-flex;align-items:center;gap:.55rem}
+.btn-tiktok:hover{background:#333;transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.tlink{font-size:.86rem;font-weight:700;color:var(--peach);display:inline-flex;align-items:center;gap:.4rem;transition:gap var(--ease)}
 .tlink:hover{gap:.65rem}
 
-/* ══════════════════════════════════════════
+/* ═══════════════════════════════════════
    NAV
-══════════════════════════════════════════ */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  background:rgba(253,248,242,.95);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  border-bottom:1.5px solid var(--border);
-  transition:box-shadow var(--ease);
-}
+═══════════════════════════════════════ */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(253,248,242,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1.5px solid var(--border);transition:box-shadow var(--ease)}
 nav.scrolled{box-shadow:var(--sh-sm)}
-.nav-inner{
-  display:flex;align-items:center;
-  justify-content:space-between;height:64px;
-}
-
-/* Logo in nav — actual image, white-bg cropped tight */
-.nav-logo{
-  display:flex;align-items:center;
-  transition:opacity var(--ease);
-}
-.nav-logo:hover{opacity:.75}
-.nav-logo img{
-  height:36px;width:auto;
-  /* Logo is black on white — mix-blend-mode makes white transparent */
-  mix-blend-mode:normal;
-}
-
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo img{height:38px;width:auto}
 .nav-links{display:flex;align-items:center;gap:1.75rem}
-.nav-links a{
-  font-size:.86rem;font-weight:700;color:var(--ink-mid);
-  transition:color var(--ease);
-  position:relative;
-}
-.nav-links a::after{
-  content:'';position:absolute;bottom:-3px;left:0;right:0;
-  height:2.5px;background:var(--peach);border-radius:2px;
-  transform:scaleX(0);transform-origin:center;
-  transition:transform var(--ease);
-}
+.nav-links a{font-size:.86rem;font-weight:700;color:var(--ink-mid);transition:color var(--ease);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2.5px;background:var(--peach);border-radius:2px;transform:scaleX(0);transform-origin:center;transition:transform var(--ease)}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a:hover::after{transform:scaleX(1)}
-
 .nav-right{display:flex;align-items:center;gap:.85rem}
-
-/* PAWTASTIC pill */
-.nav-pawtastic{
-  display:flex;align-items:center;gap:.4rem;
-  font-size:.75rem;font-weight:800;letter-spacing:.04em;
-  color:var(--honey-dk);background:var(--honey-lt);
-  padding:.38em 1em;border-radius:var(--r-pill);
-  border:1.5px solid rgba(245,166,35,.35);
-  transition:background var(--ease),border-color var(--ease);
-}
-.nav-pawtastic:hover{background:#ffe9a0;border-color:var(--honey)}
-.nav-pawtastic-dot{width:6px;height:6px;border-radius:50%;background:var(--honey);flex-shrink:0}
-
+.nav-pt-pill{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:800;color:var(--pt-dk);background:var(--pt-lt);padding:.38em 1em;border-radius:var(--r-pill);border:1.5px solid var(--pt-mid);transition:background var(--ease)}
+.nav-pt-pill:hover{background:var(--pt-mid)}
+.nav-pt-dot{width:6px;height:6px;border-radius:50%;background:var(--pt);flex-shrink:0}
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:.25rem}
 .hamburger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px}
 .hamburger span+span{margin-top:5px}
-
-.mobile-nav{
-  display:none;position:fixed;inset:0;top:64px;
-  background:var(--cream);z-index:199;padding:1.5rem;flex-direction:column;
-}
+.mobile-nav{display:none;position:fixed;inset:0;top:64px;background:var(--cream);z-index:199;padding:1.5rem;flex-direction:column}
 .mobile-nav.open{display:flex}
-.mobile-nav a{
-  font-size:1rem;font-weight:700;color:var(--ink);
-  padding:.9rem 0;border-bottom:1px solid var(--border);
-}
+.mobile-nav a{font-size:1rem;font-weight:700;color:var(--ink);padding:.9rem 0;border-bottom:1px solid var(--border)}
+@media(max-width:800px){.nav-links{display:none}.hamburger{display:block}}
 
-@media(max-width:800px){
-  .nav-links{display:none}
-  .hamburger{display:block}
-}
-
-/* ══════════════════════════════════════════
-   HERO  — logo big + clean copy, no illustration
-══════════════════════════════════════════ */
-.hero{
-  min-height:100svh;display:flex;align-items:center;
-  padding-top:64px;overflow:hidden;
-  position:relative;background:var(--cream);
-}
-
-/* Colourful blobs — bring back the playful energy */
-.hero-blob{position:absolute;border-radius:50%;filter:blur(72px);pointer-events:none}
-.hb1{width:520px;height:520px;background:#ffd4c0;top:-120px;right:-140px;opacity:.5}
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;padding-top:64px;overflow:hidden;background:var(--cream);position:relative}
+.hblob{position:absolute;border-radius:50%;filter:blur(72px);pointer-events:none}
+.hb1{width:550px;height:550px;background:#ffd4c0;top:-120px;right:-140px;opacity:.5}
 .hb2{width:380px;height:380px;background:#c8f0d8;bottom:-80px;left:-100px;opacity:.45}
 .hb3{width:260px;height:260px;background:#fde8a0;top:35%;right:8%;filter:blur(60px);opacity:.45}
-.hb4{width:200px;height:200px;background:#d0e8fd;top:20%;left:5%;filter:blur(55px);opacity:.4}
+.hb4{width:180px;height:180px;background:#d0e8fd;top:22%;left:4%;filter:blur(55px);opacity:.4}
 
-.hero-inner{
-  position:relative;z-index:2;
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:3rem;align-items:center;
-}
-
-/* Left: logo + text */
-.hero-text{display:flex;flex-direction:column;align-items:flex-start}
-
-.hero-logo-img{
-  width:min(380px,85vw);margin-bottom:2rem;
-  mix-blend-mode:normal; /* transparent PNG — no blending needed */
-  animation:fadeUp .5s ease both;
-}
-
-.hero-h1{
-  font-family:var(--f-head);
-  font-size:clamp(1.9rem,3.5vw,2.9rem);
-  font-weight:600;line-height:1.18;color:var(--ink);
-  margin-bottom:1rem;
-  animation:fadeUp .5s .08s ease both;
-}
+.hero-text{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:5rem 3.5rem 5rem max(4vw,calc((100vw - 1100px)/2 + 1rem))}
+.hero-logo-img{width:min(340px,80vw);margin-bottom:2rem;animation:fadeUp .5s ease both}
+.hero-h1{font-family:var(--f-head);font-size:clamp(1.9rem,3.2vw,2.8rem);font-weight:600;line-height:1.18;color:var(--ink);margin-bottom:1rem;animation:fadeUp .5s .08s ease both}
 .hero-h1 em{font-style:italic;color:var(--peach)}
+.hero-sub{font-size:.97rem;line-height:1.78;color:var(--ink-mid);max-width:42ch;margin-bottom:2rem;animation:fadeUp .5s .16s ease both}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2.25rem;animation:fadeUp .5s .22s ease both}
+.hero-trust{display:flex;flex-wrap:wrap;gap:.5rem;animation:fadeUp .5s .28s ease both}
+.trust-pill{font-size:.72rem;font-weight:700;padding:.35em .9em;border-radius:var(--r-pill);display:flex;align-items:center;gap:.35rem}
+.tp-green{background:var(--sage-lt);color:#2e8a58;border:1.5px solid rgba(94,192,138,.3)}
+.tp-blue{background:#e8f6fd;color:#2a8abf;border:1.5px solid rgba(79,180,232,.3)}
+.tp-rose{background:#fde8f1;color:#c0305a;border:1.5px solid rgba(240,98,146,.3)}
+.tp-honey{background:var(--honey-lt);color:var(--honey-dk);border:1.5px solid rgba(245,166,35,.3)}
 
-.hero-sub{
-  font-size:.97rem;line-height:1.78;color:var(--ink-mid);
-  max-width:40ch;margin-bottom:1.9rem;
-  animation:fadeUp .5s .16s ease both;
-}
-
-.hero-actions{
-  display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:2rem;
-  animation:fadeUp .5s .22s ease both;
-}
-
-/* Trust pills */
-.hero-pills{
-  display:flex;flex-wrap:wrap;gap:.5rem;
-  animation:fadeUp .5s .28s ease both;
-}
-.pill{
-  font-size:.72rem;font-weight:700;
-  padding:.35em .9em;border-radius:var(--r-pill);
-  display:flex;align-items:center;gap:.35rem;
-}
-.pill-green{background:var(--sage-lt);color:#2e8a58;border:1.5px solid rgba(94,192,138,.3)}
-.pill-blue {background:var(--sky-lt); color:#2a8abf;border:1.5px solid rgba(79,180,232,.3)}
-.pill-rose {background:var(--rose-lt);color:#c0305a;border:1.5px solid rgba(240,98,146,.3)}
-
-/* Right: floating card cluster */
-.hero-cards{
-  position:relative;
-  display:flex;justify-content:center;align-items:center;
-  height:420px;
-  animation:fadeIn .7s .15s ease both;
-}
-
-/* Main card */
-.hc-main{
-  background:var(--white);border-radius:var(--r-xl);
-  box-shadow:var(--sh-lg);padding:2.25rem 2rem;
-  width:280px;text-align:center;
-  border:1.5px solid var(--border);
-  position:relative;z-index:2;
-}
-.hc-emoji{font-size:6rem;line-height:1;display:block;margin-bottom:1rem;animation:floatBob 3s ease-in-out infinite}
-.hc-name{font-family:var(--f-head);font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:.3rem}
-.hc-sub{font-size:.78rem;color:var(--ink-soft)}
-.hc-badge{
-  display:inline-flex;align-items:center;gap:.4rem;
-  background:var(--peach);color:#fff;
-  font-size:.72rem;font-weight:800;
-  padding:.38em 1em;border-radius:var(--r-pill);
-  margin-top:.9rem;
-}
-
-/* Floating mini cards */
-.hc-float{
-  position:absolute;background:var(--white);
-  border-radius:var(--r-md);box-shadow:var(--sh-md);
-  padding:.7rem 1rem;border:1.5px solid var(--border);
-  display:flex;align-items:center;gap:.5rem;
-  font-size:.78rem;font-weight:700;color:var(--ink);
-  white-space:nowrap;z-index:3;
-}
-.hcf-icon{font-size:1.1rem}
-.hcf1{top:-1rem;right:-2rem;animation:floatBob 3.5s 1s ease-in-out infinite}
-.hcf2{bottom:1rem;left:-2.8rem;animation:floatBob 3.2s .5s ease-in-out infinite}
-.hcf3{top:38%;right:-3rem;animation:floatBob 4s 1.8s ease-in-out infinite}
-
-/* Blob behind cards */
-.hero-cards::before{
-  content:'';position:absolute;inset:-40px;
-  background:radial-gradient(ellipse at 55% 50%,rgba(255,200,180,.35),transparent 70%);
-  border-radius:50%;pointer-events:none;
-}
-
+/* Hero panel — product card */
+.hero-panel{position:relative;overflow:hidden;background:linear-gradient(145deg,#fff7ee,#ffe8d0 60%,#ffd8b8)}
+.hero-cards{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:2rem}
+.hero-card-stack{position:relative;width:290px}
+.hc-main{background:var(--white);border-radius:var(--r-xl);box-shadow:var(--sh-xl);overflow:hidden;border:1.5px solid var(--border)}
+.hc-top{background:linear-gradient(145deg,#eef5f0,#d8eede);padding:1.75rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hc-pt-logo{width:72px;height:auto;margin-bottom:.75rem;filter:drop-shadow(0 4px 12px rgba(74,124,89,.2))}
+.hc-bag{width:150px;height:auto;filter:drop-shadow(0 8px 20px rgba(74,124,89,.25));animation:floatBob 3.5s ease-in-out infinite}
+.hc-bottom{padding:1.2rem 1.4rem 1.4rem}
+.hc-name{font-family:var(--f-head);font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:.2rem}
+.hc-tagline{font-size:.72rem;color:var(--ink-soft);margin-bottom:.8rem}
+.hc-price{display:flex;align-items:baseline;gap:.5rem;margin-bottom:.75rem}
+.hc-price-now{font-family:var(--f-head);font-size:1.5rem;font-weight:600;color:var(--pt)}
+.hc-price-was{font-size:.78rem;color:var(--ink-faint);text-decoration:line-through}
+.hc-price-label{font-size:.6rem;font-weight:800;color:var(--pt);background:var(--pt-lt);padding:.2em .5em;border-radius:var(--r-pill)}
+.hc-ship{display:flex;align-items:center;gap:.4rem;font-size:.7rem;color:var(--pt-dk);font-weight:700;margin-bottom:.9rem}
+.hc-btn{display:block;width:100%;background:var(--pt);color:#fff;border:none;border-radius:var(--r-pill);padding:.7em;font-family:var(--f-body);font-size:.85rem;font-weight:800;cursor:pointer;transition:background var(--ease);text-align:center}
+.hc-btn:hover{background:var(--pt-dk)}
+.hfl{position:absolute;background:var(--white);border-radius:var(--r-md);box-shadow:var(--sh-md);padding:.65rem .9rem;display:flex;align-items:center;gap:.45rem;font-size:.75rem;font-weight:700;color:var(--ink);white-space:nowrap;z-index:3;border:1.5px solid var(--border)}
+.hfl1{top:-1rem;right:-2.5rem;animation:floatBob 3.5s 1s ease-in-out infinite}
+.hfl2{bottom:2.5rem;left:-2.5rem;animation:floatBob 3.2s .5s ease-in-out infinite}
 @media(max-width:820px){
-  .hero-inner{grid-template-columns:1fr;text-align:center}
-  .hero-text{align-items:center}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-text{padding:5rem 5vw 2.5rem;align-items:center;text-align:center}
   .hero-sub{max-width:none}
   .hero-actions{justify-content:center}
-  .hero-pills{justify-content:center}
-  .hero-cards{display:none}
+  .hero-trust{justify-content:center}
+  .hero-panel{min-height:420px}
 }
 
-/* ══════════════════════════════════════════
-   MARQUEE STRIP
-══════════════════════════════════════════ */
+/* ═══════════════════════════════════════
+   MARQUEE
+═══════════════════════════════════════ */
 .strip{background:var(--ink);padding:.9rem 0;overflow:hidden}
-.strip-track{
-  display:flex;gap:2.5rem;
-  animation:marquee 28s linear infinite;width:max-content;
-}
-.strip-item{
-  display:flex;align-items:center;gap:.6rem;
-  font-size:.72rem;font-weight:700;letter-spacing:.12em;
-  text-transform:uppercase;color:rgba(255,255,255,.55);white-space:nowrap;
-}
-.strip-item .sep{color:var(--honey);margin:0 .1rem}
+.strip-track{display:flex;gap:2.5rem;animation:marquee 28s linear infinite;width:max-content}
+.strip-item{display:flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);white-space:nowrap}
+.sep{color:var(--honey)}
 
-/* ══════════════════════════════════════════
-   WHY US  — concise, warm
-══════════════════════════════════════════ */
-.why{background:var(--cream)}
-.why-inner{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:center;
-}
-.why-quote{
-  font-family:var(--f-head);
-  font-size:clamp(1.6rem,2.8vw,2.2rem);
-  font-weight:600;line-height:1.28;color:var(--ink);
-  margin:1rem 0 1.25rem;
-}
-.why-quote em{font-style:italic;color:var(--peach)}
-.why-body{font-size:.94rem;line-height:1.82;color:var(--ink-mid);margin-bottom:1.75rem}
-
-/* Principles — card stack */
-.principles{
-  display:flex;flex-direction:column;gap:1px;
-  background:var(--border);border-radius:var(--r-lg);
-  overflow:hidden;box-shadow:var(--sh-sm);
-}
-.principle{
-  background:var(--white);padding:1.25rem 1.5rem;
-  display:flex;align-items:flex-start;gap:.9rem;
-  transition:background var(--ease);
-}
-.principle:hover{background:var(--warm)}
-.p-num{
-  width:26px;height:26px;border-radius:50%;
-  background:var(--honey-lt);color:var(--honey-dk);
-  font-size:.68rem;font-weight:800;
-  display:grid;place-items:center;flex-shrink:0;
-}
-.p-title{font-size:.88rem;font-weight:800;color:var(--ink);margin-bottom:.15rem}
-.p-body{font-size:.78rem;line-height:1.6;color:var(--ink-soft)}
-
-@media(max-width:780px){.why-inner{grid-template-columns:1fr}}
-
-/* ══════════════════════════════════════════
-   PICKS  — curated cards
-══════════════════════════════════════════ */
-.picks{background:var(--warm)}
-.picks-header{
-  display:flex;align-items:flex-end;justify-content:space-between;
-  margin-bottom:2.5rem;gap:1rem;flex-wrap:wrap;
-}
-.picks-note{font-size:.82rem;color:var(--ink-soft);max-width:26ch;text-align:right;line-height:1.65}
-
-.picks-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-
-.pick-card{
-  background:var(--white);border-radius:var(--r-lg);
-  border:1.5px solid var(--border);overflow:hidden;
-  transition:transform var(--ease),box-shadow var(--ease),border-color var(--ease);
-}
-.pick-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-color:var(--peach)}
-
-.pick-img{
-  aspect-ratio:4/3;position:relative;
-  display:flex;align-items:center;justify-content:center;
-  font-size:5rem;overflow:hidden;
-}
-.pi-a{background:linear-gradient(145deg,#fff7e8,#ffe8c0)}
-.pi-b{background:linear-gradient(145deg,#edf8f2,#d5f5e6)}
-.pi-c{background:linear-gradient(145deg,#f0f4ff,#d8e4f8)}
-
-.pick-badge{
-  position:absolute;top:.85rem;left:.85rem;
-  font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
-  padding:.3em .8em;border-radius:var(--r-pill);
-}
-.badge-live{background:var(--ink);color:#fff}
-.badge-soon{background:var(--border);color:var(--ink-soft)}
-.badge-test{background:var(--sage-lt);color:#1e7a48;border:1px solid rgba(94,192,138,.25)}
-
-.pick-body{padding:1.35rem 1.4rem 1.6rem}
-.pick-brand{font-size:.63rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.3rem}
-.pick-name{font-family:var(--f-head);font-size:1.15rem;font-weight:600;color:var(--ink);margin-bottom:.55rem;line-height:1.25}
-.pick-desc{font-size:.8rem;line-height:1.7;color:var(--ink-mid);margin-bottom:1rem}
-.pick-foot{display:flex;align-items:center;justify-content:space-between}
-.pick-tag{font-size:.66rem;color:var(--ink-faint);font-weight:700}
-
-@media(max-width:800px){.picks-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.picks-grid{grid-template-columns:1fr};.picks-note{text-align:left}}
-
-/* ══════════════════════════════════════════
-   PAWTASTIC FEATURE  — real photos version
-══════════════════════════════════════════ */
-
-/* Sage green from PAWTASTIC brand */
---pt-green:     #4a7c59;
---pt-green-lt:  #eef5f0;
---pt-green-dk:  #2d5a3d;
-
-.pawtastic{background:var(--pt-green-lt,#eef5f0)}
-
-/* Top: logo + header row */
-.pt-header{
-  display:flex;align-items:center;gap:1.5rem;margin-bottom:2.5rem;
-}
-.pt-logo-img{
-  height:72px;width:auto;flex-shrink:0;
-  filter:drop-shadow(0 4px 12px rgba(74,124,89,.25));
-}
-.pt-header-text{}
-.pt-partner-chip{
-  display:inline-flex;align-items:center;gap:.4rem;
-  font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  color:#2d5a3d;background:#d4e8da;
-  border:1.5px solid rgba(74,124,89,.3);
-  padding:.3em .85em;border-radius:var(--r-pill);margin-bottom:.5rem;
-}
-.pt-partner-dot{width:6px;height:6px;border-radius:50%;background:#4a7c59}
-.pt-main-title{
-  font-family:var(--f-head);
-  font-size:clamp(1.8rem,3vw,2.6rem);
-  font-weight:600;line-height:1.1;color:var(--ink);
-}
-.pt-main-title em{font-style:italic;color:#4a7c59}
-
-/* Main card: image left, copy right */
-.pt-card{
-  background:var(--white);border-radius:var(--r-xl);
-  border:1.5px solid #c8dece;
-  display:grid;grid-template-columns:1fr 1fr;
-  overflow:hidden;box-shadow:var(--sh-md);
-}
-
-/* Left: product photo */
-.pt-vis{
-  position:relative;overflow:hidden;min-height:480px;
-  background:linear-gradient(155deg,#f2f8f4,#e4f2ea);
-  display:flex;align-items:center;justify-content:center;
-}
-.pt-bag-img{
-  width:85%;max-width:380px;height:auto;
-  object-fit:contain;display:block;
-  filter:drop-shadow(0 16px 32px rgba(74,124,89,.25));
-  animation:floatBob 4s ease-in-out infinite;
-}
-/* Floating price pill on photo */
-.pt-price-pill{
-  position:absolute;top:1.5rem;right:1.5rem;
-  background:var(--ink);color:#fff;
-  border-radius:var(--r-lg);padding:1rem 1.2rem;
-  box-shadow:var(--sh-lg);text-align:center;
-  animation:floatBob 4s 1s ease-in-out infinite;
-  z-index:3;
-}
-.pt-price-label{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.2rem}
-.pt-price-was{font-size:.78rem;color:rgba(255,255,255,.45);text-decoration:line-through;margin-bottom:.1rem}
-.pt-price-now{font-size:1.6rem;font-family:var(--f-head);font-weight:600;color:#fff;line-height:1}
-.pt-price-each{font-size:.65rem;color:rgba(255,255,255,.55);margin-top:.15rem}
-/* Exclusive badge */
-.pt-excl-badge{
-  position:absolute;bottom:1.5rem;left:1.5rem;
-  background:#4a7c59;color:#fff;
-  border-radius:var(--r-md);padding:.6rem .9rem;
-  font-size:.68rem;font-weight:800;letter-spacing:.05em;
-  box-shadow:var(--sh-sm);
-  animation:floatBob 3.5s .5s ease-in-out infinite;
-}
-
-/* Right: copy */
-.pt-copy{padding:2.75rem 2.75rem;display:flex;flex-direction:column;justify-content:center}
-
-.pt-sub{font-size:.9rem;line-height:1.8;color:var(--ink-mid);margin-bottom:1.5rem}
-
-/* Features 2×2 grid */
-.pt-feats{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.75rem}
-.pt-feat{
-  background:#f2f8f4;border:1.5px solid #c8dece;
-  border-radius:var(--r-md);padding:.9rem 1rem;
-  transition:border-color var(--ease),background var(--ease),transform var(--ease);
-}
-.pt-feat:hover{border-color:#4a7c59;background:#e4f0e8;transform:translateY(-2px)}
-.pt-feat-icon{font-size:1.2rem;margin-bottom:.35rem}
-.pt-feat-title{font-size:.82rem;font-weight:800;color:var(--ink);margin-bottom:.1rem}
-.pt-feat-body{font-size:.74rem;line-height:1.55;color:var(--ink-soft)}
-
-/* Shipping info strip */
-.pt-shipping{
-  display:flex;flex-direction:column;gap:.5rem;
-  background:#f2f8f4;border:1.5px solid #c8dece;
-  border-radius:var(--r-md);padding:1rem 1.1rem;margin-bottom:1.5rem;
-}
-.pt-ship-row{
-  display:flex;align-items:center;gap:.7rem;
-  font-size:.82rem;font-weight:700;color:var(--ink-mid);
-}
-.pt-ship-icon{font-size:1rem;flex-shrink:0}
-.pt-ship-row span b{color:#4a7c59}
-
-.pt-actions{display:flex;gap:.7rem;flex-wrap:wrap}
-.btn-green{background:#4a7c59;color:#fff;border-color:#4a7c59}
-.btn-green:hover{background:#2d5a3d;transform:translateY(-2px);box-shadow:0 8px 24px rgba(74,124,89,.3)}
-
-@media(max-width:820px){
-  .pt-card{grid-template-columns:1fr}
-  .pt-vis{min-height:300px}
-  .pt-copy{padding:2rem 1.75rem}
-  .pt-feats{grid-template-columns:1fr 1fr}
-}
-@media(max-width:520px){
-  .pt-feats{grid-template-columns:1fr}
-  .pt-header{flex-direction:column;text-align:center;align-items:center}
-}
-
-/* ══════════════════════════════════════════
-   LIFE MOSAIC
-══════════════════════════════════════════ */
-.life{background:var(--warm)}
+/* ═══════════════════════════════════════
+   CAT PHOTO GRID  — real life moments
+═══════════════════════════════════════ */
+.life{background:var(--warm);padding:5.5rem 0}
+.life-intro{margin-bottom:2.5rem}
 .life-grid{
-  margin-top:2.5rem;
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  grid-template-rows:180px 180px;
-  gap:1rem;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:280px 280px;
+  gap:.85rem;
 }
-.lc{
-  border-radius:var(--r-lg);overflow:hidden;
-  border:1.5px solid var(--border);
-  display:flex;align-items:flex-end;padding:1rem;
-  position:relative;
-  transition:transform var(--ease),box-shadow var(--ease);
-}
-.lc:hover{transform:scale(1.02);box-shadow:var(--sh-md)}
-.lc1{grid-column:1/3;grid-row:1/2;background:linear-gradient(145deg,#fff7e8,#ffe4c0)}
-.lc2{grid-column:3/4;grid-row:1/2;background:linear-gradient(145deg,#edf8f2,#ccf0de)}
-.lc3{grid-column:4/5;grid-row:1/3;background:linear-gradient(145deg,#fff0eb,#ffd4c0)}
-.lc4{grid-column:1/2;grid-row:2/3;background:linear-gradient(145deg,#eef4ff,#d0e4f8)}
-.lc5{grid-column:2/4;grid-row:2/3;background:linear-gradient(145deg,#f8eeff,#e8d4f8)}
-
-.lc-center{
-  position:absolute;top:50%;left:50%;
-  transform:translate(-50%,-55%);
-  font-size:4rem;pointer-events:none;
-  filter:drop-shadow(0 4px 8px rgba(0,0,0,.08));
-}
-.lc-caption{
-  position:relative;z-index:2;
-  background:rgba(255,255,255,.88);border-radius:var(--r-sm);
-  padding:.5rem .75rem;backdrop-filter:blur(8px);
-}
-.lc-caption strong{
-  display:block;font-size:.6rem;font-weight:800;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--peach);margin-bottom:.12rem;
-}
-.lc-caption p{font-size:.74rem;line-height:1.5;color:var(--ink-mid)}
-
+.lc{border-radius:var(--r-lg);overflow:hidden;position:relative;border:1.5px solid var(--border)}
+.lc img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.lc:hover img{transform:scale(1.04)}
+/* Spanning cells */
+.lc.span-v{grid-row:span 2}   /* tall */
+.lc.span-h{grid-column:span 2} /* wide */
+/* Overlay caption */
+.lc-cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(30,24,20,.55));padding:1.25rem 1.1rem .9rem;opacity:0;transition:opacity var(--ease)}
+.lc:hover .lc-cap{opacity:1}
+.lc-cap strong{display:block;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:.15rem}
+.lc-cap p{font-size:.78rem;color:#fff;line-height:1.4}
 @media(max-width:820px){
   .life-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
-  .lc1,.lc2,.lc3,.lc4,.lc5{grid-column:auto;grid-row:auto;min-height:150px}
+  .lc.span-v,.lc.span-h{grid-row:auto;grid-column:auto}
+  .lc{min-height:200px}
+  .lc-cap{opacity:1}
 }
 @media(max-width:520px){.life-grid{grid-template-columns:1fr}}
 
-/* ══════════════════════════════════════════
+/* ═══════════════════════════════════════
+   PAWTASTIC SPOTLIGHT  (homepage teaser)
+═══════════════════════════════════════ */
+.pt-teaser{background:var(--pt-lt);padding:5.5rem 0}
+.pt-teaser-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+
+/* Left: visual */
+.pt-teaser-vis{position:relative;display:flex;flex-direction:column;align-items:center;gap:1.25rem}
+.pt-teaser-logo{width:90px;height:auto;filter:drop-shadow(0 4px 16px rgba(74,124,89,.2))}
+.pt-teaser-bag{width:75%;max-width:280px;filter:drop-shadow(0 16px 40px rgba(74,124,89,.28));animation:floatBob 4s ease-in-out infinite}
+/* Price bubble */
+.pt-price-bubble{background:var(--ink);color:#fff;border-radius:var(--r-xl);padding:1.1rem 1.4rem;text-align:center;box-shadow:var(--sh-lg)}
+.ppb-excl{font-size:.58rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--honey);margin-bottom:.2rem}
+.ppb-was{font-size:.75rem;color:rgba(255,255,255,.4);text-decoration:line-through}
+.ppb-now{font-size:2rem;font-family:var(--f-head);font-weight:600;line-height:1.1;color:#fff}
+.ppb-per{font-size:.65rem;color:rgba(255,255,255,.5);margin-top:.15rem}
+.pt-ship-note{font-size:.78rem;font-weight:700;color:var(--pt-dk);background:var(--pt-mid);padding:.45em .9em;border-radius:var(--r-pill);display:inline-flex;align-items:center;gap:.4rem}
+
+/* Right: copy */
+.pt-teaser-copy{}
+.pt-teaser-partner{display:inline-flex;align-items:center;gap:.45rem;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--pt-dk);background:#d4e8da;border:1.5px solid rgba(74,124,89,.3);padding:.3em .88em;border-radius:var(--r-pill);margin-bottom:1.1rem}
+.pt-teaser-h{font-family:var(--f-head);font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;line-height:1.15;color:var(--ink);margin-bottom:.75rem}
+.pt-teaser-h em{font-style:italic;color:var(--pt)}
+.pt-teaser-desc{font-size:.93rem;line-height:1.82;color:var(--ink-mid);margin-bottom:1.5rem}
+/* 4 feature pills */
+.pt-feat-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}
+.pt-feat-pill{font-size:.75rem;font-weight:700;padding:.35em .85em;border-radius:var(--r-pill);background:var(--white);border:1.5px solid var(--pt-mid);color:var(--pt-dk);display:flex;align-items:center;gap:.35rem}
+/* Social order buttons */
+.pt-order-label{font-size:.65rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.6rem;display:block}
+.pt-soc-btns{display:flex;gap:.6rem;flex-wrap:wrap}
+.soc-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65em 1.2em;border-radius:var(--r-pill);font-size:.84rem;font-weight:800;border:2px solid transparent;cursor:pointer;transition:all var(--ease)}
+.soc-fb{background:#1877f2;color:#fff;border-color:#1877f2}
+.soc-fb:hover{background:#145dbf;transform:translateY(-2px);box-shadow:0 8px 20px rgba(24,119,242,.35)}
+.soc-ig{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff}
+.soc-ig:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(220,39,67,.3)}
+.soc-web{background:var(--white);color:var(--pt-dk);border-color:var(--pt-mid)}
+.soc-web:hover{background:var(--pt-lt);border-color:var(--pt);transform:translateY(-2px)}
+.pt-discount-note{font-size:.74rem;color:var(--pt-dk);font-weight:700;margin-top:.75rem;display:flex;align-items:center;gap:.35rem}
+
+@media(max-width:820px){
+  .pt-teaser-inner{grid-template-columns:1fr}
+  .pt-teaser-vis{flex-direction:row;flex-wrap:wrap;justify-content:center}
+}
+
+/* ═══════════════════════════════════════
+   ABOUT  — brand story + partnership
+═══════════════════════════════════════ */
+.about{background:var(--cream);padding:5.5rem 0}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:start}
+
+/* Left: story */
+.about-story{}
+.about-story-text{font-size:.95rem;line-height:1.85;color:var(--ink-mid);margin-bottom:1rem}
+.about-tiktok-row{display:flex;align-items:center;gap:.85rem;margin-top:1.75rem;padding:1.1rem 1.25rem;background:var(--warm);border:1.5px solid var(--border);border-radius:var(--r-md)}
+.about-tiktok-icon{width:44px;height:44px;border-radius:var(--r-sm);background:#010101;display:grid;place-items:center;font-size:1.3rem;flex-shrink:0}
+.about-tiktok-label{font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.about-tiktok-handle{font-size:.9rem;font-weight:800;color:var(--ink)}
+
+/* Right: partnership card */
+.collab-card{background:var(--ink);border-radius:var(--r-xl);padding:2.5rem;color:#fff;position:relative;overflow:hidden}
+.collab-card::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(245,166,35,.08);top:-80px;right:-80px;pointer-events:none}
+.collab-eyebrow{font-size:.65rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--honey);margin-bottom:.85rem;display:block}
+.collab-h{font-family:var(--f-head);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:600;color:#fff;line-height:1.2;margin-bottom:.9rem}
+.collab-body{font-size:.88rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:1.5rem}
+.collab-perks{display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.75rem}
+.collab-perk{display:flex;align-items:flex-start;gap:.7rem;font-size:.83rem;color:rgba(255,255,255,.75)}
+.collab-perk-icon{font-size:1rem;flex-shrink:0;margin-top:.05rem}
+.collab-perk b{color:#fff}
+.collab-cta{display:flex;flex-direction:column;gap:.65rem}
+.collab-tiktok-btn{display:flex;align-items:center;gap:.6rem;background:#fff;color:var(--ink);border-radius:var(--r-pill);padding:.8em 1.5em;font-family:var(--f-body);font-size:.88rem;font-weight:800;transition:all var(--ease);border:none;cursor:pointer;width:fit-content}
+.collab-tiktok-btn:hover{background:var(--honey-lt);transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.collab-tiktok-icon{width:24px;height:24px;background:#010101;border-radius:6px;display:grid;place-items:center;font-size:.9rem;flex-shrink:0}
+.collab-note{font-size:.72rem;color:rgba(255,255,255,.35)}
+
+@media(max-width:820px){.about-inner{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════
    HOW TO ORDER
-══════════════════════════════════════════ */
-.order{background:var(--cream)}
+═══════════════════════════════════════ */
+.order{background:var(--warm)}
 .order-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .order-h{font-family:var(--f-head);font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;line-height:1.18;margin:.75rem 0 1rem}
 .order-sub{font-size:.92rem;line-height:1.8;color:var(--ink-mid);margin-bottom:1.75rem}
-
 .channels{display:flex;flex-direction:column;gap:.8rem}
-.ch{
-  display:flex;align-items:center;gap:.9rem;
-  padding:1rem 1.2rem;background:var(--white);
-  border:1.5px solid var(--border);border-radius:var(--r-md);
-  transition:border-color var(--ease),transform var(--ease),box-shadow var(--ease);
-  cursor:pointer;
-}
+.ch{display:flex;align-items:center;gap:.9rem;padding:1rem 1.2rem;background:var(--white);border:1.5px solid var(--border);border-radius:var(--r-md);transition:border-color var(--ease),transform var(--ease),box-shadow var(--ease);text-decoration:none;color:inherit}
 .ch:hover{border-color:var(--honey);transform:translateX(5px);box-shadow:var(--sh-sm)}
 .ch-icon{width:42px;height:42px;border-radius:var(--r-sm);display:grid;place-items:center;font-size:1.2rem;flex-shrink:0}
-.wechat    .ch-icon{background:#e8f9e4}
+.facebook .ch-icon{background:#eef2fb}
 .instagram .ch-icon{background:#ffeef5}
-.facebook  .ch-icon{background:#eef2fb}
-.ch-name  {font-size:.88rem;font-weight:800;color:var(--ink)}
+.website .ch-icon{background:var(--pt-lt)}
+.ch-name{font-size:.9rem;font-weight:800;color:var(--ink)}
 .ch-handle{font-size:.72rem;color:var(--ink-soft);margin-top:.1rem}
-.ch-arr   {margin-left:auto;color:var(--ink-faint);transition:transform var(--ease)}
+.ch-arr{margin-left:auto;color:var(--ink-faint);transition:transform var(--ease)}
 .ch:hover .ch-arr{transform:translateX(4px);color:var(--honey-dk)}
-
-/* Steps — right col */
 .osteps{display:flex;flex-direction:column}
 .os{display:flex;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--border)}
 .os:last-child{border-bottom:none}
-.os-n{
-  width:28px;height:28px;border-radius:50%;
-  background:var(--peach-lt);color:var(--peach-dk);
-  font-size:.72rem;font-weight:800;
-  display:grid;place-items:center;flex-shrink:0;margin-top:.1rem;
-}
+.os-n{width:28px;height:28px;border-radius:50%;background:var(--peach-lt);color:var(--peach-dk);font-size:.72rem;font-weight:800;display:grid;place-items:center;flex-shrink:0;margin-top:.1rem}
 .os-title{font-size:.88rem;font-weight:800;color:var(--ink);margin-bottom:.18rem}
 .os-body{font-size:.78rem;line-height:1.62;color:var(--ink-soft)}
-
 @media(max-width:780px){.order-inner{grid-template-columns:1fr}}
 
-/* ══════════════════════════════════════════
-   COMING NEXT
-══════════════════════════════════════════ */
-.next{background:var(--warm)}
-.next-inner{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:1.25rem;align-items:start}
-.next-intro{padding-right:2rem}
-.next-h{font-family:var(--f-head);font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:600;margin:.75rem 0 .9rem;line-height:1.2}
-
-.nc{
-  background:var(--white);border:1.5px solid var(--border);
-  border-radius:var(--r-lg);padding:1.75rem 1.5rem;
-  transition:border-color var(--ease),box-shadow var(--ease),transform var(--ease);
-}
-.nc:hover{border-color:var(--peach);box-shadow:var(--sh-sm);transform:translateY(-4px)}
-.nc-icon{font-size:2rem;display:block;margin-bottom:.85rem}
-.nc-title{font-family:var(--f-head);font-size:1.08rem;font-weight:600;color:var(--ink);margin-bottom:.4rem}
-.nc-body{font-size:.8rem;line-height:1.68;color:var(--ink-soft);margin-bottom:.9rem}
-.nc-tag{
-  font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--ink-soft);border:1.5px solid var(--border);
-  border-radius:var(--r-pill);padding:.28em .8em;display:inline-block;
-}
-
-@media(max-width:820px){
-  .next-inner{grid-template-columns:1fr 1fr}
-  .next-intro{grid-column:1/-1;padding-right:0}
-}
-@media(max-width:520px){.next-inner{grid-template-columns:1fr}}
-
-/* ══════════════════════════════════════════
+/* ═══════════════════════════════════════
    CONTACT
-══════════════════════════════════════════ */
+═══════════════════════════════════════ */
 .contact{background:var(--ink)}
-.contact-inner{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:start;
-}
-
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .contact-left .eyebrow{color:rgba(255,255,255,.38)}
 .contact-h{font-family:var(--f-head);font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;line-height:1.18;margin:.75rem 0 1rem;color:#fff}
 .contact-sub{font-size:.92rem;line-height:1.8;color:rgba(255,255,255,.5);margin-bottom:2rem}
-
 .c-socials{display:flex;flex-direction:column;gap:.7rem}
-.c-row{
-  display:flex;align-items:center;gap:.85rem;
-  padding:.85rem 1.1rem;
-  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--r-md);transition:background var(--ease),border-color var(--ease);
-}
+.c-row{display:flex;align-items:center;gap:.85rem;padding:.85rem 1.1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-md);transition:background var(--ease),border-color var(--ease);text-decoration:none}
 .c-row:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.15)}
 .c-ico{font-size:1rem;flex-shrink:0}
 .c-platform{font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35)}
 .c-handle{font-size:.88rem;font-weight:700;color:#fff;margin-top:.05rem}
-
-.contact-form{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.1);
-  border-radius:var(--r-xl);padding:2.25rem;
-  backdrop-filter:blur(10px);
-}
+.contact-form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-xl);padding:2.25rem;backdrop-filter:blur(10px)}
 .contact-form h3{font-family:var(--f-head);font-size:1.2rem;font-weight:600;color:#fff;margin-bottom:1.4rem}
 .fg{margin-bottom:.82rem}
 .fg label{display:block;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-bottom:.32rem}
-.fg input,.fg select,.fg textarea{
-  width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
-  border-radius:var(--r-sm);padding:.76rem .9rem;
-  color:#fff;font-family:var(--f-body);font-size:.88rem;font-weight:400;outline:none;
-  transition:border-color var(--ease),background var(--ease);
-}
+.fg input,.fg select,.fg textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);padding:.76rem .9rem;color:#fff;font-family:var(--f-body);font-size:.88rem;outline:none;transition:border-color var(--ease),background var(--ease)}
 .fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.2)}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--peach);background:rgba(255,255,255,.1)}
 .fg textarea{resize:vertical;min-height:88px}
 .fg select option{background:#1e1814}
-.form-btn{
-  width:100%;margin-top:.4rem;
-  background:var(--peach);color:#fff;
-  font-family:var(--f-body);font-size:.9rem;font-weight:800;
-  padding:.88em;border-radius:var(--r-pill);border:none;cursor:pointer;
-  transition:background var(--ease),transform var(--ease);
-}
+.form-btn{width:100%;margin-top:.4rem;background:var(--peach);color:#fff;font-family:var(--f-body);font-size:.9rem;font-weight:800;padding:.88em;border-radius:var(--r-pill);border:none;cursor:pointer;transition:background var(--ease),transform var(--ease)}
 .form-btn:hover{background:var(--peach-dk);transform:translateY(-1px)}
 .form-note{margin-top:.6rem;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.22);text-align:center}
-
 @media(max-width:780px){.contact-inner{grid-template-columns:1fr}}
 
-/* ══════════════════════════════════════════
+/* ═══════════════════════════════════════
    FOOTER
-══════════════════════════════════════════ */
+═══════════════════════════════════════ */
 footer{background:#131010;padding:3.5rem 0 2rem}
-.footer-top{
-  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem;
-  padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);
-}
-.footer-logo-img{
-  height:28px;width:auto;margin-bottom:.9rem;
-  filter:invert(1);opacity:.7; /* white version of the black logo */
-}
-.footer-tagline{font-size:.8rem;line-height:1.72;color:rgba(255,255,255,.36);max-width:26ch;margin-bottom:1.1rem}
-.footer-badge{
-  display:inline-flex;align-items:center;gap:.4rem;
-  font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  color:rgba(245,166,35,.8);background:rgba(245,166,35,.1);
-  border:1px solid rgba(245,166,35,.22);border-radius:var(--r-pill);padding:.28em .8em;
-}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-logo-img{height:32px;width:auto;margin-bottom:.9rem;filter:brightness(0) invert(1);opacity:.7}
+.footer-tagline{font-size:.8rem;line-height:1.72;color:rgba(255,255,255,.36);max-width:28ch;margin-bottom:1.1rem}
+.footer-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,166,35,.8);background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.22);border-radius:var(--r-pill);padding:.28em .8em}
 .fcol h4{font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-bottom:.9rem}
 .fcol ul{display:flex;flex-direction:column;gap:.5rem}
 .fcol a{font-size:.82rem;color:rgba(255,255,255,.45);transition:color var(--ease)}
 .fcol a:hover{color:rgba(255,255,255,.82)}
-
-.footer-bottom{
-  margin-top:1.75rem;display:flex;justify-content:space-between;
-  align-items:center;flex-wrap:wrap;gap:.75rem;
-}
+.footer-bottom{margin-top:1.75rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem}
 .footer-copy{font-size:.74rem;color:rgba(255,255,255,.24)}
 .footer-socs{display:flex;gap:.5rem}
-.fsoc{
-  width:32px;height:32px;border-radius:var(--r-sm);
-  background:rgba(255,255,255,.07);display:grid;place-items:center;
-  font-size:.9rem;cursor:pointer;transition:background var(--ease);
-}
+.fsoc{width:32px;height:32px;border-radius:var(--r-sm);background:rgba(255,255,255,.07);display:grid;place-items:center;font-size:.9rem;cursor:pointer;transition:background var(--ease)}
 .fsoc:hover{background:rgba(255,255,255,.15)}
+@media(max-width:760px){.footer-top{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
 
-@media(max-width:760px){
-  .footer-top{grid-template-columns:1fr 1fr}
-  .footer-brand{grid-column:1/-1}
-}
-
-/* ══════════════════════════════════════════
+/* ═══════════════════════════════════════
    ANIMATIONS
-══════════════════════════════════════════ */
+═══════════════════════════════════════ */
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes floatBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
 .reveal.visible{opacity:1;transform:translateY(0)}
-.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-
-.toast{
-  position:fixed;bottom:2rem;right:2rem;z-index:300;
-  background:var(--ink);color:#fff;
-  padding:.9rem 1.3rem;border-radius:var(--r-md);
-  font-size:.86rem;font-weight:600;box-shadow:var(--sh-lg);
-  transform:translateY(80px);opacity:0;
-  transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .35s;
-}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+.toast{position:fixed;bottom:2rem;right:2rem;z-index:300;background:var(--ink);color:#fff;padding:.9rem 1.3rem;border-radius:var(--r-md);font-size:.86rem;font-weight:600;box-shadow:var(--sh-lg);transform:translateY(80px);opacity:0;transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .35s}
 .toast.show{transform:translateY(0);opacity:1}
   </style>
 </head>
 <body>
 
-<!-- ═══════ NAV ══════════════════════════════════ -->
+<!-- ══ NAV ════════════════════════════════════ -->
 <nav id="nav">
   <div class="container nav-inner">
-
-    <a href="#" class="nav-logo">
-      <img src="logo.png" alt="Gogou Pets" />
-    </a>
-
+    <a href="#" class="nav-logo"><img src="logo.png" alt="Gogou Pets"/></a>
     <ul class="nav-links">
-      <li><a href="#picks">Our Picks</a></li>
       <li><a href="#pawtastic">PAWTASTIC</a></li>
-      <li><a href="#why">Why Us</a></li>
+      <li><a href="#life">Our Cats</a></li>
+      <li><a href="#about">About Us</a></li>
       <li><a href="#order">How to Order</a></li>
     </ul>
-
     <div class="nav-right">
-      <a href="#pawtastic" class="nav-pawtastic">
-        <span class="nav-pawtastic-dot"></span>PAWTASTIC ✦
+      <a href="#pawtastic" class="nav-pt-pill">
+        <span class="nav-pt-dot"></span>PAWTASTIC — £9.99
       </a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-
   </div>
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
-  <a href="#picks"     onclick="closeMob()">Our Picks</a>
   <a href="#pawtastic" onclick="closeMob()">PAWTASTIC</a>
-  <a href="#why"       onclick="closeMob()">Why Us</a>
+  <a href="#life"      onclick="closeMob()">Our Cats</a>
+  <a href="#about"     onclick="closeMob()">About Us</a>
   <a href="#order"     onclick="closeMob()">How to Order</a>
   <a href="#contact"   onclick="closeMob()">Contact</a>
 </div>
 
 
-<!-- ═══════ HERO ═════════════════════════════════ -->
+<!-- ══ HERO ═══════════════════════════════════ -->
 <section class="hero" id="home">
-  <div class="hero-blob hb1"></div>
-  <div class="hero-blob hb2"></div>
-  <div class="hero-blob hb3"></div>
-  <div class="hero-blob hb4"></div>
+  <div class="hblob hb1"></div>
+  <div class="hblob hb2"></div>
+  <div class="hblob hb3"></div>
+  <div class="hblob hb4"></div>
 
-  <div class="container hero-inner">
-
-    <!-- Left: logo + copy -->
-    <div class="hero-text">
-
-      <img
-        src="logo.png"
-        alt="Gogou Pets"
-        class="hero-logo-img"
-      />
-
-      <h1 class="hero-h1">
-        Pet essentials we genuinely<br>
-        <em>use, trust and repurchase.</em>
-      </h1>
-
-      <p class="hero-sub">
-        We don't stock everything. We carefully choose what we'd actually buy for our own pets — then share it with UK homes like yours.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#picks"  class="btn btn-peach">See our picks ✨</a>
-        <a href="#why"    class="btn btn-outline">How we choose →</a>
-      </div>
-
-      <div class="hero-pills">
-        <span class="pill pill-green">✓ Real pet owners</span>
-        <span class="pill pill-blue">✓ UK based</span>
-        <span class="pill pill-rose">✓ Not a marketplace</span>
-      </div>
-
+  <div class="hero-text">
+    <img src="logo.png" alt="Gogou Pets" class="hero-logo-img"/>
+    <h1 class="hero-h1">
+      Pet essentials we genuinely<br><em>use, trust and repurchase.</em>
+    </h1>
+    <p class="hero-sub">A small independent UK pet brand. We only share products that earn a permanent place in our own home.</p>
+    <div class="hero-actions">
+      <a href="#pawtastic" class="btn btn-green">Shop PAWTASTIC — £9.99 🐾</a>
+      <a href="#about"     class="btn btn-outline">About us →</a>
     </div>
+    <div class="hero-trust">
+      <span class="trust-pill tp-green">✓ Real pet owners</span>
+      <span class="trust-pill tp-blue">✓ UK independent</span>
+      <span class="trust-pill tp-rose">✓ Not a marketplace</span>
+      <span class="trust-pill tp-honey">✓ Free shipping on 3+ bags</span>
+    </div>
+  </div>
 
-    <!-- Right: floating card cluster -->
+  <div class="hero-panel">
     <div class="hero-cards">
-      <div class="hc-main">
-        <span class="hc-emoji">🐾</span>
-        <div class="hc-name">PAWTASTIC</div>
-        <div class="hc-sub">Tofu Cat Litter</div>
-        <div class="hc-badge">✦ Current pick</div>
+      <div class="hero-card-stack">
+        <div class="hc-main">
+          <div class="hc-top">
+            <img src="pawtastic-logo.png" alt="PAWTASTIC" class="hc-pt-logo"/>
+            <img src="pawtastic-bag-clean.png" alt="PAWTASTIC Tofu Cat Litter" class="hc-bag"/>
+          </div>
+          <div class="hc-bottom">
+            <div class="hc-name">PAWTASTIC Tofu Cat Litter</div>
+            <div class="hc-tagline">Natural · Low Dust · 6.8L bag</div>
+            <div class="hc-price">
+              <span class="hc-price-now">£9.99</span>
+              <span class="hc-price-was">£12.99</span>
+              <span class="hc-price-label">Gogou Price</span>
+            </div>
+            <div class="hc-ship">🚚 Free UK shipping on 3+ bags</div>
+            <a href="#pawtastic" class="hc-btn">Order Now →</a>
+          </div>
+        </div>
+        <div class="hfl hfl1">✅ Tested at home</div>
+        <div class="hfl hfl2">🇬🇧 UK wide delivery</div>
       </div>
-      <div class="hc-float hcf1"><span class="hcf-icon">🌿</span> Natural tofu</div>
-      <div class="hc-float hcf2"><span class="hcf-icon">✅</span> Tested at home</div>
-      <div class="hc-float hcf3"><span class="hcf-icon">🇬🇧</span> UK ready</div>
     </div>
-
   </div>
 </section>
 
 
-<!-- ═══════ STRIP ════════════════════════════════ -->
+<!-- ══ STRIP ═══════════════════════════════════ -->
 <div class="strip" aria-hidden="true">
   <div class="strip-track">
     <span class="strip-item">Gogou Pets<span class="sep"> ✦ </span></span>
-    <span class="strip-item">Curated for UK homes<span class="sep"> ✦ </span></span>
-    <span class="strip-item">Not a marketplace<span class="sep"> ✦ </span></span>
-    <span class="strip-item">Products we genuinely use<span class="sep"> ✦ </span></span>
-    <span class="strip-item">PAWTASTIC — live now<span class="sep"> ✦ </span></span>
+    <span class="strip-item">PAWTASTIC Tofu Litter — £9.99<span class="sep"> ✦ </span></span>
+    <span class="strip-item">Free UK shipping on 3+ bags<span class="sep"> ✦ </span></span>
     <span class="strip-item">Real pet owners<span class="sep"> ✦ </span></span>
-    <span class="strip-item">United Kingdom 🇬🇧<span class="sep"> ✦ </span></span>
-    <!-- duplicate for seamless loop -->
+    <span class="strip-item">UK independent brand<span class="sep"> ✦ </span></span>
+    <span class="strip-item">Open to partnerships<span class="sep"> ✦ </span></span>
     <span class="strip-item">Gogou Pets<span class="sep"> ✦ </span></span>
-    <span class="strip-item">Curated for UK homes<span class="sep"> ✦ </span></span>
-    <span class="strip-item">Not a marketplace<span class="sep"> ✦ </span></span>
-    <span class="strip-item">Products we genuinely use<span class="sep"> ✦ </span></span>
-    <span class="strip-item">PAWTASTIC — live now<span class="sep"> ✦ </span></span>
+    <span class="strip-item">PAWTASTIC Tofu Litter — £9.99<span class="sep"> ✦ </span></span>
+    <span class="strip-item">Free UK shipping on 3+ bags<span class="sep"> ✦ </span></span>
     <span class="strip-item">Real pet owners<span class="sep"> ✦ </span></span>
-    <span class="strip-item">United Kingdom 🇬🇧<span class="sep"> ✦ </span></span>
+    <span class="strip-item">UK independent brand<span class="sep"> ✦ </span></span>
+    <span class="strip-item">Open to partnerships<span class="sep"> ✦ </span></span>
   </div>
 </div>
 
 
-<!-- ═══════ WHY US ═══════════════════════════════ -->
-<section class="why" id="why">
-  <div class="container">
-    <div class="why-inner">
-
-      <div class="reveal">
-        <span class="eyebrow">Why Gogou Pets</span>
-        <p class="why-quote">
-          "We only share what we'd <em>genuinely buy again.</em>"
-        </p>
-        <p class="why-body">
-          Finding pet products that actually work is harder than it looks. We try things ourselves first — and only share what earns a permanent place in our home.
-        </p>
-        <a href="#picks" class="tlink">See what we currently recommend →</a>
-      </div>
-
-      <div class="principles reveal d2">
-        <div class="principle">
-          <div class="p-num">01</div>
-          <div>
-            <div class="p-title">We only share what we use</div>
-            <div class="p-body">If we wouldn't repurchase it, you won't see it here.</div>
-          </div>
-        </div>
-        <div class="principle">
-          <div class="p-num">02</div>
-          <div>
-            <div class="p-title">Fewer, better things</div>
-            <div class="p-body">Three things worth buying beats a hundred maybes.</div>
-          </div>
-        </div>
-        <div class="principle">
-          <div class="p-num">03</div>
-          <div>
-            <div class="p-title">Made for real UK homes</div>
-            <div class="p-body">Chosen for actual UK flats and houses, not photoshoots.</div>
-          </div>
-        </div>
-        <div class="principle">
-          <div class="p-num">04</div>
-          <div>
-            <div class="p-title">Small, independent, unsponsored</div>
-            <div class="p-body">Our opinions are genuinely our own.</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════ CURRENTLY LOVED ═══════════════════════ -->
-<section class="picks" id="picks">
-  <div class="container">
-
-    <div class="picks-header reveal">
-      <div>
-        <span class="eyebrow">Currently Loved</span>
-        <h2 class="h2">Our carefully<br>selected picks</h2>
-      </div>
-      <p class="picks-note">Updated only when we find something genuinely worth sharing.</p>
-    </div>
-
-    <div class="picks-grid">
-
-      <div class="pick-card reveal">
-        <div class="pick-img pi-a" style="padding:0;overflow:hidden;position:relative">
-          <span class="pick-badge badge-live" style="z-index:2">✦ Current pick</span>
-          <img src="pawtastic-bag-clean.png" alt="PAWTASTIC Tofu Cat Litter"
-               style="width:100%;height:100%;object-fit:contain;padding:1rem"/>
-        </div>
-        <div class="pick-body">
-          <div class="pick-brand">PAWTASTIC · Selected Partner</div>
-          <div class="pick-name">Natural Tofu Cat Litter</div>
-          <p class="pick-desc">Low-dust, fast-clumping, genuinely odour-controlling. One of the few things we'd actively repurchase.</p>
-          <div style="margin-bottom:.9rem;display:flex;align-items:baseline;gap:.5rem">
-            <span style="font-family:var(--f-head);font-size:1.3rem;font-weight:600;color:#4a7c59">£9.99</span>
-            <span style="font-size:.75rem;color:var(--ink-faint);text-decoration:line-through">£12.99</span>
-            <span style="font-size:.68rem;font-weight:700;color:var(--ink-soft)">· Gogou exclusive</span>
-          </div>
-          <div class="pick-foot">
-            <a href="#pawtastic" class="tlink">View details →</a>
-            <span class="pick-tag">Cat · Litter</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="pick-card reveal d1">
-        <div class="pick-img pi-b">
-          <span class="pick-badge badge-test">In testing</span>
-          <span style="font-size:5.5rem">🐶</span>
-        </div>
-        <div class="pick-body">
-          <div class="pick-brand">Dog Essentials · In Review</div>
-          <div class="pick-name">Slow-feed bowl</div>
-          <p class="pick-desc">Testing a few options. Nothing's earned a recommendation yet — we'll share when it does.</p>
-          <div class="pick-foot">
-            <span style="font-size:.8rem;color:var(--ink-faint);font-weight:600">Testing in progress</span>
-            <span class="pick-tag">Dog · Feeding</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="pick-card reveal d2">
-        <div class="pick-img pi-c">
-          <span class="pick-badge badge-soon">Evaluating</span>
-          <span style="font-size:5.5rem">🌿</span>
-        </div>
-        <div class="pick-body">
-          <div class="pick-brand">Natural Treats · Shortlisting</div>
-          <div class="pick-name">Clean-ingredient treats</div>
-          <p class="pick-desc">Shortlisting treats with ingredients we can actually read. Not yet ready to recommend.</p>
-          <div class="pick-foot">
-            <span style="font-size:.8rem;color:var(--ink-faint);font-weight:600">Not yet recommended</span>
-            <span class="pick-tag">Cat &amp; Dog · Treats</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════ PAWTASTIC FEATURE ════════════════════ -->
-<section class="pawtastic" id="pawtastic">
-  <div class="container">
-
-    <!-- Header: logo + title -->
-    <div class="pt-header reveal">
-      <img src="pawtastic-logo.png" alt="PAWTASTIC" class="pt-logo-img"/>
-      <div class="pt-header-text">
-        <div class="pt-partner-chip">
-          <span class="pt-partner-dot"></span>Featured partner · We repurchase this ourselves
-        </div>
-        <h2 class="pt-main-title">Natural Tofu Cat Litter<br><em>that actually works</em></h2>
-      </div>
-    </div>
-
-    <!-- Main card -->
-    <div class="pt-card reveal d1">
-
-      <!-- Left: product photo -->
-      <div class="pt-vis">
-        <img src="pawtastic-bag-clean.png" alt="PAWTASTIC Natural Tofu Cat Litter bag" class="pt-bag-img"/>
-
-        <!-- Price pill floating on photo -->
-        <div class="pt-price-pill">
-          <div class="pt-price-label">Gogou Exclusive Price</div>
-          <div class="pt-price-was" style="text-decoration:line-through;color:rgba(255,255,255,.4);font-size:.78rem">£12.99</div>
-          <div class="pt-price-now">£9.99</div>
-          <div class="pt-price-each">per 6.8L bag</div>
-        </div>
-
-        <!-- Free shipping badge -->
-        <div class="pt-excl-badge">🚚 Free UK shipping on 3+ bags</div>
-      </div>
-
-      <!-- Right: copy -->
-      <div class="pt-copy">
-
-        <p class="pt-sub">The one we keep going back to for our own cats. 6.8L of natural tofu litter — lightweight, clean, and genuinely effective in a real UK home.</p>
-
-        <!-- 4 feature cards -->
-        <div class="pt-feats">
-          <div class="pt-feat">
-            <div class="pt-feat-icon">💨</div>
-            <div class="pt-feat-title">Low Dust</div>
-            <div class="pt-feat-body">Cleaner air for you and your cats. No cloud when you pour or scoop.</div>
-          </div>
-          <div class="pt-feat">
-            <div class="pt-feat-icon">🌸</div>
-            <div class="pt-feat-title">Strong Odour Control</div>
-            <div class="pt-feat-body">Keeps your home genuinely fresh — not just masked.</div>
-          </div>
-          <div class="pt-feat">
-            <div class="pt-feat-icon">🧲</div>
-            <div class="pt-feat-title">Easy to Clean</div>
-            <div class="pt-feat-body">Quick clumping, less mess. Spot-cleaning takes 30 seconds.</div>
-          </div>
-          <div class="pt-feat">
-            <div class="pt-feat-icon">🌿</div>
-            <div class="pt-feat-title">Lightweight &amp; Long-lasting</div>
-            <div class="pt-feat-body">6.8L natural tofu. Flushable, eco-friendly, 100% recyclable packaging.</div>
-          </div>
-        </div>
-
-        <!-- Shipping info -->
-        <div class="pt-shipping">
-          <div class="pt-ship-row">
-            <span class="pt-ship-icon">🏷️</span>
-            <span>Gogou exclusive price: <b>£9.99/bag</b> <span style="color:var(--ink-faint);text-decoration:line-through;font-weight:400;margin-left:.35rem">was £12.99</span></span>
-          </div>
-          <div class="pt-ship-row">
-            <span class="pt-ship-icon">🚚</span>
-            <span><b>Free UK shipping</b> on orders of 3 bags or more</span>
-          </div>
-          <div class="pt-ship-row">
-            <span class="pt-ship-icon">📦</span>
-            <span>Available across the whole of the UK</span>
-          </div>
-          <div class="pt-ship-row">
-            <span class="pt-ship-icon">💬</span>
-            <span>Order via <b>Facebook, WeChat or Instagram</b></span>
-          </div>
-        </div>
-
-        <div class="pt-actions">
-          <a href="#order"   class="btn btn-green">Order now — £9.99/bag</a>
-          <a href="#contact" class="btn btn-outline">Ask us anything</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════ REAL PET LIFE ═════════════════════════ -->
+<!-- ══ REAL CAT PHOTOS ════════════════════════ -->
 <section class="life" id="life">
   <div class="container">
-    <div class="reveal">
-      <span class="eyebrow">Real Pet Life</span>
-      <h2 class="h2" style="margin-top:.5rem">Everyday moments<br>in UK pet homes</h2>
+    <div class="life-intro reveal">
+      <span class="eyebrow">Our Cats</span>
+      <h2 class="h2" style="margin-top:.4rem">The real testers<br>behind Gogou Pets</h2>
     </div>
 
     <div class="life-grid">
-      <div class="lc lc1 reveal">
-        <div class="lc-center">😸</div>
-        <div class="lc-caption">
-          <strong>Morning routine</strong>
-          <p>Fresh litter before the morning tea. Takes 30 seconds now.</p>
+      <!-- Big: staring from litter box — most relevant to PAWTASTIC -->
+      <div class="lc span-v reveal">
+        <img src="cat-litter2.jpg" alt="British Shorthair cat in litter box"/>
+        <div class="lc-cap">
+          <strong>The product tester</strong>
+          <p>Using PAWTASTIC litter every day. Verdict: approved.</p>
         </div>
       </div>
-      <div class="lc lc2 reveal d1">
-        <div class="lc-center" style="font-size:3rem">🪴🐱</div>
-        <div class="lc-caption">
-          <strong>Windowsill life</strong>
-          <p>They always find the best light.</p>
+
+      <!-- Top right: cat in litter box looking around -->
+      <div class="lc reveal d1">
+        <img src="cat-litter1.jpg" alt="Cat in litter tray"/>
+        <div class="lc-cap">
+          <strong>Morning inspection</strong>
+          <p>Low dust, strong clumping. Fresh every time.</p>
         </div>
       </div>
-      <div class="lc lc3 reveal d2">
-        <div class="lc-center" style="font-size:3.5rem">🛋️</div>
-        <div class="lc-caption">
-          <strong>The favourite spot</strong>
-          <p>Claimed the left cushion on day one.</p>
+
+      <!-- Mid right: yawning cat -->
+      <div class="lc reveal d2">
+        <img src="cat-yawn.jpg" alt="Cat yawning on floor"/>
+        <div class="lc-cap">
+          <strong>Monday morning energy</strong>
+          <p>Same.</p>
         </div>
       </div>
-      <div class="lc lc4 reveal d1">
-        <div class="lc-center" style="font-size:3rem">🐾</div>
-        <div class="lc-caption">
-          <strong>Tiny footprints</strong>
-          <p>A reminder they were there.</p>
+
+      <!-- Bottom left: sleeping on pillow -->
+      <div class="lc reveal d1">
+        <img src="cat-sleep.jpg" alt="Cat sleeping on pillow"/>
+        <div class="lc-cap">
+          <strong>Claimed the whole bed</strong>
+          <p>Left no room for anyone else.</p>
         </div>
       </div>
-      <div class="lc lc5 reveal d2">
-        <div class="lc-center" style="font-size:3.5rem">😴</div>
-        <div class="lc-caption">
-          <strong>Sunday afternoon</strong>
-          <p>Warm sun. A very contented cat.</p>
+
+      <!-- Bottom right: cat rolling on bed -->
+      <div class="lc reveal d2">
+        <img src="cat-bed.jpg" alt="Cat rolling on bed"/>
+        <div class="lc-cap">
+          <strong>Asking for attention</strong>
+          <p>Always works.</p>
         </div>
       </div>
     </div>
@@ -1158,98 +496,194 @@ footer{background:#131010;padding:3.5rem 0 2rem}
 </section>
 
 
-<!-- ═══════ HOW TO ORDER ══════════════════════════ -->
+<!-- ══ PAWTASTIC SPOTLIGHT ════════════════════ -->
+<section class="pt-teaser" id="pawtastic">
+  <div class="container">
+    <div class="pt-teaser-inner">
+
+      <!-- Left: visual -->
+      <div class="pt-teaser-vis reveal">
+        <img src="pawtastic-logo.png" alt="PAWTASTIC" class="pt-teaser-logo"/>
+        <img src="pawtastic-bag-clean.png" alt="PAWTASTIC Natural Tofu Cat Litter" class="pt-teaser-bag"/>
+        <div class="pt-price-bubble">
+          <div class="ppb-excl">Gogou Exclusive Price</div>
+          <div class="ppb-was">£12.99</div>
+          <div class="ppb-now">£9.99</div>
+          <div class="ppb-per">per 6.8L bag</div>
+        </div>
+        <div class="pt-ship-note">🚚 Free UK shipping on 3+ bags</div>
+      </div>
+
+      <!-- Right: copy -->
+      <div class="pt-teaser-copy reveal d2">
+        <div class="pt-teaser-partner">
+          <span style="width:6px;height:6px;border-radius:50%;background:var(--pt);flex-shrink:0"></span>
+          Featured partner · We repurchase this
+        </div>
+        <h2 class="pt-teaser-h">
+          The litter that <em>earned its place</em><br>in our home
+        </h2>
+        <p class="pt-teaser-desc">
+          Natural tofu cat litter that genuinely works. Low dust, strong clumping, real odour control. We tested it, ran out, and ordered it again. That's why we recommend it.
+        </p>
+
+        <div class="pt-feat-pills">
+          <span class="pt-feat-pill">💨 Low Dust</span>
+          <span class="pt-feat-pill">🌸 Odour Control</span>
+          <span class="pt-feat-pill">🧲 Strong Clumping</span>
+          <span class="pt-feat-pill">🌿 Natural Tofu</span>
+          <span class="pt-feat-pill">🚿 Flushable</span>
+          <span class="pt-feat-pill">📦 6.8L · 100% Recyclable</span>
+        </div>
+
+        <span class="pt-order-label">Order via — exclusive £9.99 price on social:</span>
+        <div class="pt-soc-btns">
+          <a href="https://www.facebook.com/people/Pets-Pawtastic" target="_blank" rel="noopener" class="soc-btn soc-fb">👥 Facebook</a>
+          <a href="https://www.instagram.com/pawtastic.cat"        target="_blank" rel="noopener" class="soc-btn soc-ig">📸 Instagram</a>
+          <a href="https://pawtastic.co.uk"                        target="_blank" rel="noopener" class="soc-btn soc-web">🌐 Website</a>
+        </div>
+        <div class="pt-discount-note">💬 Message on Facebook or Instagram for the <strong>&nbsp;£9.99 Gogou price</strong></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ ABOUT + PARTNERSHIP ════════════════════ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+
+      <!-- Left: brand story -->
+      <div class="reveal">
+        <span class="eyebrow">About Gogou Pets</span>
+        <h2 class="h2" style="margin-bottom:1.25rem">A small UK pet brand<br>built on <em>real experience</em></h2>
+
+        <p class="about-story-text">
+          Gogou Pets started simply — we were pet owners who found it genuinely hard to know what to trust. So we started testing things ourselves, sharing only what actually earned a place in our home.
+        </p>
+        <p class="about-story-text">
+          We're not a marketplace. We're not a dropshipping operation. We're a small independent UK brand that carefully selects and recommends pet essentials we'd buy again with our own money.
+        </p>
+        <p class="about-story-text">
+          Right now we're featuring PAWTASTIC Tofu Cat Litter — the first product that passed our test. More are coming.
+        </p>
+
+        <div class="about-tiktok-row">
+          <div class="about-tiktok-icon">🎵</div>
+          <div>
+            <div class="about-tiktok-label">Follow us on TikTok</div>
+            <div class="about-tiktok-handle">@gogoupets</div>
+          </div>
+          <a href="https://www.tiktok.com/@gogoupets" target="_blank" rel="noopener" class="btn btn-ink" style="margin-left:auto;font-size:.8rem;padding:.6em 1.1em">Follow →</a>
+        </div>
+      </div>
+
+      <!-- Right: partnership card -->
+      <div class="collab-card reveal d2">
+        <span class="collab-eyebrow">Work With Us</span>
+        <h3 class="collab-h">Got a pet product<br>worth sharing?</h3>
+        <p class="collab-body">
+          We're actively looking for pet brands and products to partner with. If you make something genuinely useful for UK pet owners, we'd love to hear from you.
+        </p>
+
+        <div class="collab-perks">
+          <div class="collab-perk">
+            <span class="collab-perk-icon">🐾</span>
+            <span><b>Real testing</b> — we use your product ourselves before recommending it</span>
+          </div>
+          <div class="collab-perk">
+            <span class="collab-perk-icon">🇬🇧</span>
+            <span><b>UK audience</b> — real British pet owners, not a paid ad slot</span>
+          </div>
+          <div class="collab-perk">
+            <span class="collab-perk-icon">📱</span>
+            <span><b>TikTok reach</b> — we share recommendations with our growing community</span>
+          </div>
+          <div class="collab-perk">
+            <span class="collab-perk-icon">🤝</span>
+            <span><b>Long-term partnership</b> — we're building a curated brand family, not a one-off post</span>
+          </div>
+        </div>
+
+        <div class="collab-cta">
+          <a href="https://www.tiktok.com/@gogoupets" target="_blank" rel="noopener" class="collab-tiktok-btn">
+            <div class="collab-tiktok-icon">🎵</div>
+            Get in touch on TikTok — @gogoupets
+          </a>
+          <p class="collab-note">DM us on TikTok to start a conversation</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ HOW TO ORDER ═════════════════════════════ -->
 <section class="order" id="order">
   <div class="container">
     <div class="order-inner">
-
       <div class="reveal">
-        <span class="eyebrow">How to Order</span>
+        <span class="eyebrow">How to Order PAWTASTIC</span>
         <h2 class="order-h">Simple, personal,<br>no cart needed</h2>
-        <p class="order-sub">We're a small team. Message us directly and we'll sort it together.</p>
+        <p class="order-sub">Message PAWTASTIC directly on Facebook or Instagram to get the <strong>£9.99 Gogou exclusive price</strong>. Three bags or more ships free across the UK.</p>
         <div class="channels">
-          <div class="ch wechat">
-            <div class="ch-icon">💬</div>
-            <div><div class="ch-name">WeChat</div><div class="ch-handle">@gogoUpets</div></div>
-            <span class="ch-arr">→</span>
-          </div>
-          <div class="ch instagram">
-            <div class="ch-icon">📸</div>
-            <div><div class="ch-name">Instagram</div><div class="ch-handle">@gogoupets</div></div>
-            <span class="ch-arr">→</span>
-          </div>
-          <div class="ch facebook">
+          <a href="https://www.facebook.com/people/Pets-Pawtastic" target="_blank" rel="noopener" class="ch facebook">
             <div class="ch-icon">👥</div>
-            <div><div class="ch-name">Facebook</div><div class="ch-handle">Gogou Pets UK</div></div>
+            <div><div class="ch-name">Facebook</div><div class="ch-handle">Pets Pawtastic · £9.99 exclusive</div></div>
             <span class="ch-arr">→</span>
-          </div>
+          </a>
+          <a href="https://www.instagram.com/pawtastic.cat" target="_blank" rel="noopener" class="ch instagram">
+            <div class="ch-icon">📸</div>
+            <div><div class="ch-name">Instagram</div><div class="ch-handle">@pawtastic.cat · £9.99 exclusive</div></div>
+            <span class="ch-arr">→</span>
+          </a>
+          <a href="https://pawtastic.co.uk" target="_blank" rel="noopener" class="ch website">
+            <div class="ch-icon">🌐</div>
+            <div><div class="ch-name">Website</div><div class="ch-handle">pawtastic.co.uk</div></div>
+            <span class="ch-arr">→</span>
+          </a>
         </div>
       </div>
 
       <div class="osteps reveal d2">
-        <div class="os">
-          <div class="os-n">1</div>
-          <div><div class="os-title">Message us on any channel</div><div class="os-body">WeChat, Instagram or Facebook — your choice.</div></div>
-        </div>
-        <div class="os">
-          <div class="os-n">2</div>
-          <div><div class="os-title">Tell us what you're after</div><div class="os-body">Ask about PAWTASTIC or anything on our picks.</div></div>
-        </div>
-        <div class="os">
-          <div class="os-n">3</div>
-          <div><div class="os-title">We confirm the details</div><div class="os-body">Pricing, availability and delivery — no surprises.</div></div>
-        </div>
-        <div class="os">
-          <div class="os-n">4</div>
-          <div><div class="os-title">On its way to you 🎉</div><div class="os-body">We handle the rest and keep you updated.</div></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════ COMING NEXT ═══════════════════════════ -->
-<section class="next" id="next">
-  <div class="container">
-    <div class="next-inner">
-      <div class="next-intro reveal">
-        <span class="eyebrow">What's coming</span>
-        <h2 class="next-h">More picks when<br>they're ready</h2>
-        <p class="body" style="color:var(--ink-mid)">We only add something when it genuinely earns it. No hype, no launch dates.</p>
-      </div>
-      <div class="nc reveal d1">
-        <span class="nc-icon">🐶</span>
-        <div class="nc-title">Dog day-to-day essentials</div>
-        <p class="nc-body">Testing a few options — nothing's ready to recommend yet.</p>
-        <span class="nc-tag">In testing</span>
-      </div>
-      <div class="nc reveal d2">
-        <span class="nc-icon">🏡</span>
-        <div class="nc-title">Home comfort products</div>
-        <p class="nc-body">Beds and scratchers that don't look terrible in a living room. High bar.</p>
-        <span class="nc-tag">Shortlisting</span>
+        <div class="os"><div class="os-n">1</div><div><div class="os-title">Message on Facebook or Instagram</div><div class="os-body">Mention Gogou Pets to get the £9.99 exclusive price.</div></div></div>
+        <div class="os"><div class="os-n">2</div><div><div class="os-title">Tell us your order</div><div class="os-body">How many bags you need and your delivery details.</div></div></div>
+        <div class="os"><div class="os-n">3</div><div><div class="os-title">Confirm and pay</div><div class="os-body">Pricing, shipping and payment — straightforward, no surprises.</div></div></div>
+        <div class="os"><div class="os-n">4</div><div><div class="os-title">Delivered across the UK 🎉</div><div class="os-body">Free shipping on 3+ bags. We'll keep you updated every step.</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- ═══════ CONTACT ═══════════════════════════════ -->
+<!-- ══ CONTACT ══════════════════════════════════ -->
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-inner">
-
       <div class="reveal">
         <span class="eyebrow">Get in touch</span>
-        <h2 class="contact-h">Questions, orders<br>or just a hello 🐾</h2>
-        <p class="contact-sub">We're a small team and we read everything. We'd love to hear from you.</p>
+        <h2 class="contact-h">Questions, orders<br>or partnerships 🐾</h2>
+        <p class="contact-sub">We're a small team. Whether it's an order, a product question, or a collab idea — we read everything.</p>
         <div class="c-socials">
-          <div class="c-row"><span class="c-ico">📸</span><div><div class="c-platform">Instagram</div><div class="c-handle">@gogoupets</div></div></div>
-          <div class="c-row"><span class="c-ico">👥</span><div><div class="c-platform">Facebook</div><div class="c-handle">Gogou Pets UK</div></div></div>
-          <div class="c-row"><span class="c-ico">💬</span><div><div class="c-platform">WeChat</div><div class="c-handle">@gogoUpets</div></div></div>
-          <div class="c-row"><span class="c-ico">📍</span><div><div class="c-platform">Based in</div><div class="c-handle">United Kingdom 🇬🇧</div></div></div>
+          <a href="https://www.tiktok.com/@gogoupets" target="_blank" rel="noopener" class="c-row">
+            <span class="c-ico">🎵</span>
+            <div><div class="c-platform">TikTok · Gogou Pets enquiries &amp; partnerships</div><div class="c-handle">@gogoupets</div></div>
+          </a>
+          <a href="https://www.facebook.com/people/Pets-Pawtastic" target="_blank" rel="noopener" class="c-row">
+            <span class="c-ico">👥</span>
+            <div><div class="c-platform">Facebook · PAWTASTIC orders</div><div class="c-handle">Pets Pawtastic</div></div>
+          </a>
+          <a href="https://www.instagram.com/pawtastic.cat" target="_blank" rel="noopener" class="c-row">
+            <span class="c-ico">📸</span>
+            <div><div class="c-platform">Instagram · PAWTASTIC orders</div><div class="c-handle">@pawtastic.cat</div></div>
+          </a>
+          <a href="https://pawtastic.co.uk" target="_blank" rel="noopener" class="c-row">
+            <span class="c-ico">🌐</span>
+            <div><div class="c-platform">Website</div><div class="c-handle">pawtastic.co.uk</div></div>
+          </a>
         </div>
       </div>
 
@@ -1262,8 +696,8 @@ footer{background:#131010;padding:3.5rem 0 2rem}
           <select id="fsubject">
             <option value="">Choose a topic…</option>
             <option>PAWTASTIC — I'd like to order</option>
-            <option>Question about a product</option>
-            <option>Upcoming picks</option>
+            <option>Brand partnership / collaboration</option>
+            <option>Product recommendation</option>
             <option>Something else</option>
           </select>
         </div>
@@ -1271,57 +705,53 @@ footer{background:#131010;padding:3.5rem 0 2rem}
         <button class="form-btn" onclick="submitForm()">Send message ✨</button>
         <p class="form-note">We reply within 24 hrs · No spam ever</p>
       </div>
-
     </div>
   </div>
 </section>
 
 
-<!-- ═══════ FOOTER ════════════════════════════════ -->
+<!-- ══ FOOTER ═══════════════════════════════════ -->
 <footer>
   <div class="container">
     <div class="footer-top">
-
       <div class="footer-brand fcol">
         <img src="logo.png" alt="Gogou Pets" class="footer-logo-img"/>
-        <p class="footer-tagline">Carefully selected pet essentials for modern UK homes. Not a marketplace.</p>
+        <p class="footer-tagline">A small UK pet brand sharing only what we genuinely use and trust.</p>
         <div class="footer-badge">🇬🇧 UK independent · Est. 2024</div>
       </div>
-
       <div class="fcol">
-        <h4>Our Picks</h4>
+        <h4>PAWTASTIC</h4>
         <ul>
-          <li><a href="#pawtastic">PAWTASTIC Tofu Litter</a></li>
-          <li><a href="#next">What's coming next</a></li>
+          <li><a href="#pawtastic">About PAWTASTIC</a></li>
+          <li><a href="https://www.facebook.com/people/Pets-Pawtastic" target="_blank" rel="noopener">Order on Facebook</a></li>
+          <li><a href="https://www.instagram.com/pawtastic.cat" target="_blank" rel="noopener">Order on Instagram</a></li>
+          <li><a href="https://pawtastic.co.uk" target="_blank" rel="noopener">pawtastic.co.uk</a></li>
         </ul>
       </div>
-
       <div class="fcol">
         <h4>Gogou Pets</h4>
         <ul>
-          <li><a href="#why">Why us</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#about">Work with us</a></li>
           <li><a href="#order">How to order</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-
       <div class="fcol">
-        <h4>Find us</h4>
+        <h4>Follow Us</h4>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">WeChat</a></li>
+          <li><a href="https://www.tiktok.com/@gogoupets" target="_blank" rel="noopener">TikTok — @gogoupets</a></li>
+          <li><a href="https://www.instagram.com/pawtastic.cat" target="_blank" rel="noopener">Instagram — @pawtastic.cat</a></li>
+          <li><a href="https://www.facebook.com/people/Pets-Pawtastic" target="_blank" rel="noopener">Facebook — Pets Pawtastic</a></li>
         </ul>
       </div>
-
     </div>
-
     <div class="footer-bottom">
       <span class="footer-copy">© 2025 Gogou Pets. Made with 🧡 in the UK.</span>
       <div class="footer-socs">
-        <div class="fsoc" title="Instagram">📸</div>
-        <div class="fsoc" title="Facebook">👥</div>
-        <div class="fsoc" title="WeChat">💬</div>
+        <a href="https://www.tiktok.com/@gogoupets" target="_blank" rel="noopener" class="fsoc" title="TikTok">🎵</a>
+        <a href="https://www.facebook.com/people/Pets-Pawtastic" target="_blank" rel="noopener" class="fsoc" title="Facebook">👥</a>
+        <a href="https://www.instagram.com/pawtastic.cat" target="_blank" rel="noopener" class="fsoc" title="Instagram">📸</a>
       </div>
     </div>
   </div>
@@ -1330,13 +760,8 @@ footer{background:#131010;padding:3.5rem 0 2rem}
 <div class="toast" id="toast">Message sent — we'll be in touch soon 🐾</div>
 
 <script>
-  // Nav scroll
   const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-  });
-
-  // Hamburger
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
   const ham = document.getElementById('hamburger');
   const mob = document.getElementById('mobileNav');
   ham.addEventListener('click', () => mob.classList.toggle('open'));
@@ -1344,18 +769,12 @@ footer{background:#131010;padding:3.5rem 0 2rem}
   document.addEventListener('click', e => {
     if (!mob.contains(e.target) && !ham.contains(e.target)) mob.classList.remove('open');
   });
-
-  // Scroll reveal
   const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
   }, { threshold: 0.07 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // Form
   function submitForm() {
-    const name  = document.getElementById('fname').value.trim();
+    const name = document.getElementById('fname').value.trim();
     const email = document.getElementById('femail').value.trim();
     if (!name || !email) { alert('Please fill in your name and email.'); return; }
     const t = document.getElementById('toast');
